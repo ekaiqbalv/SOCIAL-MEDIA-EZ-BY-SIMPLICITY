@@ -1,0 +1,19 @@
+.card-auth {
+  border: 1px solid #e6ecef;
+  border-radius: 3px;
+  padding: 18px;
+  width: 30vw;
+  .title {
+    font-size: 22px;
+    color: #4c4c4c;
+    margin-bottom: 18px;
+  }
+  .content {
+    margin-bottom: 18px;
+  }
+  .action {
+    font-size: 18px;
+  }
+  .extra-action {
+  }
+}

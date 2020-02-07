@@ -1,0 +1,16 @@
+.card-post{  
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e6ecef;
+  border-radius: 3px;
+  padding: 18px;
+  .avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .content{
+    width: 100%;
+  }
+}

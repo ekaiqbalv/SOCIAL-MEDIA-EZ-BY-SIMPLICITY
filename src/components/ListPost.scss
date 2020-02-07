@@ -1,0 +1,23 @@
+.info-user {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+  div {
+    margin-right: 6px;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .username,.date-post {
+    color: #657786;
+  }
+}
+
+.info-post{
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  div{
+    margin-right: 20px;
+  }
+}
