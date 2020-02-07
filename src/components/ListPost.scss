@@ -1,8 +1,20 @@
+$break-medium: 768px;
+$break-large: 1024px;
+
 .info-user {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 4px;
+  @media screen and (max-width: $break-medium - 1) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $break-medium) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $break-large) {
+    font-size: 18px;
+  }   
   div {
     margin-right: 6px;
   }
@@ -11,7 +23,28 @@
   }
   .username,.date-post {
     color: #657786;
+    @media screen and (max-width: $break-medium - 1) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: $break-medium) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $break-large) {
+      font-size: 16px;
+    }   
   }
+}
+
+.text-post{
+  @media screen and (max-width: $break-medium - 1) {
+    font-size: 13px;
+  }
+  @media screen and (min-width: $break-medium) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: $break-large) {
+    font-size: 17px;
+  }  
 }
 
 .info-post{
