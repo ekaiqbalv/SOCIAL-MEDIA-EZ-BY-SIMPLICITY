@@ -1,8 +1,10 @@
+$break-medium: 768px;
+$break-large: 1024px;
+
 .card-auth {
   border: 1px solid #e6ecef;
   border-radius: 3px;
-  padding: 18px;
-  width: 30vw;
+  padding: 18px;  
   .title {
     font-size: 22px;
     color: #4c4c4c;
@@ -13,7 +15,16 @@
   }
   .action {
     font-size: 18px;
+    display: flex;
+    justify-content: center;
   }
-  .extra-action {
+  @media screen and (max-width: $break-medium - 1) {
+    width: 70vw;
   }
+  @media screen and (min-width: $break-medium) {
+    width: 40vw;
+  }
+  @media screen and (min-width: $break-large) {
+    width: 30vw;
+  }   
 }

@@ -1,16 +1,29 @@
-.card-post{  
+$break-medium: 768px;
+$break-large: 1024px;
+
+.card-post {
   display: flex;
   flex-direction: row;
   border: 1px solid #e6ecef;
   border-radius: 3px;
   padding: 18px;
-  .avatar{
-    width: 60px;
-    height: 60px;
+  .avatar {
     border-radius: 50%;
     margin-right: 10px;
+    @media screen and (max-width: $break-medium - 1) {
+      width: 45px;
+      height: 45px;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 60px;
+      height: 60px;
+    }
+    @media screen and (min-width: $break-large) {
+      width: 70px;
+      height: 70px;
+    }
   }
-  .content{
+  .content {
     width: 100%;
   }
 }

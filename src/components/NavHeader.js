@@ -11,10 +11,6 @@ const renderButton = loginStatus => {
         <Button
           type="primary"
           text="Masuk"
-          onClick={() => {
-            // this.props.history.push("/login");
-            console.log("masuk klik happened");
-          }}
         />
         <Button type="secondary" text="Daftar" />
       </div>

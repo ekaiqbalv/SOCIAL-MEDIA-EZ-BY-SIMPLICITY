@@ -13,8 +13,11 @@ $break-large: 1024px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;  
-    @media screen and (max-width: $break-medium) {
+    @media screen and (max-width: $break-medium - 1) {
       width: 80vw;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 70vw;
     }
     @media screen and (min-width: $break-large) {
       width: 50vw;
@@ -23,8 +26,14 @@ $break-large: 1024px;
       color: white;
       font-weight: bold;
       text-align: center;
-      @media screen and (max-width: $break-medium) {
+      // @media screen and (max-width: $break-medium) {
+      //   font-size: 18px;
+      // }
+      @media screen and (max-width: $break-medium - 1) {
         font-size: 18px;
+      }
+      @media screen and (min-width: $break-medium) {
+        font-size: 20px;
       }
       @media screen and (min-width: $break-large) {
         font-size: 24px;

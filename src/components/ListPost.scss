@@ -1,6 +1,7 @@
 .info-user {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 4px;
   div {
     margin-right: 6px;
